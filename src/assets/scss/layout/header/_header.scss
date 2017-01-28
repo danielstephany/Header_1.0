@@ -56,6 +56,9 @@ $header-hover: 0.3s linear;
 .mobile-nav-head {
 	display: none;
 }
+.nav-overlay{
+	display: none;
+}
 
 @media (max-width: $header-breakpoint){
 	.header {
@@ -72,7 +75,7 @@ $header-hover: 0.3s linear;
 		right: -75%;
 		bottom: 0;
 		z-index: 10;
-		transition: 0.4s linear;
+		transition: 0.4s ease;
 	}
 	.header-logo {
 		h1 {
@@ -81,15 +84,33 @@ $header-hover: 0.3s linear;
 	}
 	.mobile-nav-head {
 		display: block;
-		min-height: 40px;
+		min-height: 60px;
 		width: 100%;
 		position: relative;
+		padding: 15px 15px;
+		h2 {
+			margin: 0;
+		}
+	}
+	.nav-overlay {
+		display: block;
+		width: 100%;
+		background: transparent;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transition: 0.3s linear;
 	}
 	.nav-active {
 		overflow: hidden;
 		.header {
 			.header-nav-container {
 				right: 0;
+			}
+			.nav-overlay {
+				background: rgba(0,0,0,0.1);
 			}
 		}
 	}
