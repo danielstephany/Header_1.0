@@ -58,6 +58,7 @@ function header_nav_ctrls(){
 				}
 				//opens selected nav
 				childList.stop().slideDown(slidetime);
+				container.children('.active').removeClass("active");
 				listItem.addClass("active");
 			//closes selected nav
 			} else {
