@@ -24,6 +24,7 @@ function header_nav_ctrls(){
 		}, function(){
 			if(windowWidth > breakpoint){
 				childList.stop().slideUp(slidetime);
+				toggle.parents().removeClass('active');
 			}
 		});
 	}
