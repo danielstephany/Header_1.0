@@ -76,6 +76,7 @@ $header-hover: 0.3s linear;
 		bottom: 0;
 		z-index: 10;
 		transition: 0.4s ease;
+		overflow: scroll;
 	}
 	.header-logo {
 		h1 {
