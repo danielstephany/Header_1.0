@@ -110,6 +110,7 @@ function header_nav_ctrls(){
 		// closing all navs
 		$(".header-main-nav .active").children("ul").stop().slideUp(slidetime);
 		$(".header-main-nav .active").removeClass("active");
+		$(".nav-overlay").remove();
 		// closing nav mobile drawer
 		$("body").removeClass("nav-active");
 	});
