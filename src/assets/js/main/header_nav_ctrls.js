@@ -24,6 +24,8 @@ function header_nav_ctrls(){
 		}, function(){
 			if(windowWidth > breakpoint){
 				childList.stop().slideUp(slidetime);
+				// $(".header-main-nav .active").children("ul").stop().slideUp(slidetime);
+				// $(".header-main-nav .active").removeClass("active");
 				toggle.parents().removeClass('active');
 			}
 		});
@@ -43,7 +45,7 @@ function header_nav_ctrls(){
 
 			if (!listItem.hasClass("active")){
 				if(!container.hasClass("header-main-nav")){
-					container.css({"height": "auto"}); // allows the container to expand with its children.
+					container.css({"height": "auto"}); // allows the container to expand and contract with its children.
 				}
 				//mobile nav event
 				if(windowWidth <= breakpoint){ 
@@ -59,10 +61,12 @@ function header_nav_ctrls(){
 				}
 				//opens selected nav
 				childList.stop().slideDown(slidetime);
-				container.children('.active').removeClass("active");
 				listItem.addClass("active");
 			//closes selected nav
 			} else {
+				if(!container.hasClass("header-main-nav")){
+					container.css({"height": "auto"}); // allows the container to expand and contract with its children.
+				}
 				childList.stop().slideUp(slidetime);
 				listItem.removeClass("active");
 			}

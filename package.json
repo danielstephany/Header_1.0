@@ -4,7 +4,8 @@
   "description": "this is a clone of the square website.",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",

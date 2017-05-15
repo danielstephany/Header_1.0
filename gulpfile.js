@@ -16,9 +16,7 @@ const plumber = 	   require('gulp-plumber'); //error handler for gulp
 
 // js files to be concatinated in this order
 var vendorScripts = [
-		'bower_vendors/jquery/dist/jquery.min.js',
-		'bower_vendors/jquery-touch-events/src/jquery.mobile-events.min.js',
-		'bower_vendors/bootstrap-sass/assets/javascripts/bootstrap.js'
+		'node_modules/jquery/dist/jquery.min.js'
 		];
 var mainScripts = [
 	'./src/assets/js/main/header_nav_ctrls.js'];
@@ -26,7 +24,7 @@ var mainScripts = [
 var scriptFeed = vendorScripts.concat(mainScripts);
 
 // file paths to the fonts
-var fonts = ['bower_vendors/bootstrap-sass/assets/fonts/**/*.*', 'bower_vendors/font-awesome/fonts/*.*'];
+var fonts = [];
 
 
 // Compile Twig templates to HTML

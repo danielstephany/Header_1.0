@@ -15,9 +15,6 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
     "jquery": "^3.1.0",
-    "jquery-touch-events": "jQuery-Touch-Events#^1.0.5",
-    "font-awesome": "fontawesome#^4.6.3"
   }
 }
