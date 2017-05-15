@@ -24,8 +24,6 @@ function header_nav_ctrls(){
 		}, function(){
 			if(windowWidth > breakpoint){
 				childList.stop().slideUp(slidetime);
-				// $(".header-main-nav .active").children("ul").stop().slideUp(slidetime);
-				// $(".header-main-nav .active").removeClass("active");
 				toggle.parents().removeClass('active');
 			}
 		});
